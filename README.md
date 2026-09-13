@@ -24,31 +24,51 @@ Structured frameworks consistently outperform single-line prompts because they f
 - **RISEN** - Role, Instructions, Steps, End goal, Narrowing
 - **CRAFT** - Context, Role, Action, Format, Tone
 
-Example structured prompt:
+---
+
+## Marketing Prompts
+
+### Product launch email
 
 ```
-Act as a Senior Email Marketer for a SaaS company.
-Context: We are launching a new feature that solves [PROBLEM] for [AUDIENCE].
+Act as a Senior Email Marketer for a [INDUSTRY] company.
+Context: We are launching [PRODUCT_NAME], which solves [PROBLEM] for [TARGET_AUDIENCE].
 Objective: Write a launch email that drives clicks to the product page.
 Format: Subject line, 3 short paragraphs, one clear CTA.
 Constraints: Under 150 words. No exclamation marks.
 ```
 
----
+### Landing page headline generator
 
-## Marketing Prompts
-
-- Product launch email generator
-- Social media caption generator (platform-specific tone)
-- Ad copy variations for A/B testing
-- Landing page headline generator
+```
+Act as a Conversion Copywriter.
+Context: The product is [PRODUCT_DESCRIPTION] aimed at [TARGET_AUDIENCE].
+Objective: Generate 10 headline variations for the landing page hero section.
+Format: Numbered list, each headline under 10 words.
+Constraints: Focus on the outcome the customer gets, not the feature itself.
+```
 
 ## Coding Prompts
 
-- Code review and bug diagnosis prompt
-- Refactoring prompt with explicit constraints
-- Unit test generator
-- Documentation generator from existing code
+### Code review and bug diagnosis
+
+```
+Act as a Senior [LANGUAGE] Engineer reviewing a pull request.
+Context: This function is supposed to [EXPECTED_BEHAVIOR] but instead [ACTUAL_BEHAVIOR].
+Objective: Identify the root cause and propose a fix.
+Format: Explanation first, then the corrected code block.
+Constraints: Do not rewrite unrelated code. Flag any edge cases you notice.
+```
+
+### Unit test generator
+
+```
+Act as a Test Engineer.
+Context: Here is a function: [PASTE_FUNCTION].
+Objective: Write unit tests covering normal cases, edge cases, and failure cases.
+Format: Use [TESTING_FRAMEWORK] syntax.
+Constraints: One test per case, clearly named.
+```
 
 ## Writing Prompts
 
@@ -58,16 +78,27 @@ Constraints: Under 150 words. No exclamation marks.
 
 ## SEO Prompts
 
-- Keyword cluster generator
-- On-page optimization checklist
-- Meta description generator
-- Content gap analysis prompt
+### Keyword cluster generator
+
+```
+Act as an SEO Strategist.
+Context: My website covers [INDUSTRY/NICHE] and I want to build topical authority around [CORE_TOPIC].
+Objective: Generate a keyword cluster of [NUMBER] related keywords grouped by search intent.
+Format: Grouped list with primary keyword and supporting keywords under each.
+Constraints: Prioritize keywords with clear commercial or informational intent.
+```
 
 ## HR and Hiring Prompts
 
-- Structured interview question generator
-- Job description writer
-- Candidate evaluation rubric generator
+### Structured interview question generator
+
+```
+Act as an HR Director hiring for a [ROLE_TITLE] position.
+Context: The role requires [KEY_SKILLS] and reports to [TEAM/MANAGER].
+Objective: Generate interview questions that reveal real experience, not rehearsed answers.
+Format: 8 questions grouped by skill area, with one follow-up probe per question.
+Constraints: No generic "tell me about yourself" style questions.
+```
 
 ## Sales Prompts
 
